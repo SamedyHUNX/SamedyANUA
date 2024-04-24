@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, section {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* announcement bar */
+div.announcement-bar {
+    display: flex;
+    background-color: #000000;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Helvetica-N4', sans-serif;
+    padding: 12px 48px;
+}
+
+/* button styling */
+button.left-button, button.right-button, .navbar .left-group-button, .navbar .right-group-button-button {
+    height: 37px;
+    width: 28px;
+    background-color: black;
+    color: white;
+    border-style: none;
+}
+.left-arrow, .right-arrow {
+    height: 90%;
+    width: 90%;
+    font-size: 25px;
+}
+
+/* right arrow */
+i.left-arrow {
+    text-align: left;
+}
+
+/* left arrow */
+i.right-arrow {
+    text-align: right;
+}
+
+/* center text */
+div.announcement-bar div {
+    padding: 11px 10px;
+    text-align: center;
+}
+.announcement-bar-text {
+    font-size: 14px;
+    color: white;
+    font-weight: lighter;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    height: 78px;
+    padding: 16px 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.navbar .left-group-button, .navbar .right-group-button-button {
+    color: black;
+    background-color: white;
+}
+
+.anua-logo {
+    width: 140px;
+}
+
+.right-group-button {
+    display: flex;
+    align-items: center;
+}
+
+.right-group-button-button a {
+    text-decoration: none;
+}
+
+.left-group-button, .right-group-logo {
+    color: black;
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    font-size: 18px;
+    font-weight: semibold;
+}
+
+.right-group-button-button {
+    border-style: none;
+}
+
+/* no bag logo for mobile version */
+.bag-logo-button {
+    display: none;
+}
+
+/* hero section */
+.hero-section {
+    position: relative;
+}
+
+div.hero-img {
+    position: relative;
+    height: 37vh;
+    width: 100%;
+}
+
+.hero-section .hero-img img {
+    top: 0;
+    left: 0;
+    height: 37vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-container {
+    position: absolute;
+    left: 6%;
+    top: 40%;
+    text-align: left;
+}
+
+.text-container p {
+    letter-spacing: -0.24px;
+    font-size: 24px;
+    font-family: 'Helvetica-N7', sans-serif;
+}
+
+/* spacing section: about brand */
+div.spacing-section {
+    position: relative;
+    width: 100%;
+    height: 184px;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0px;
+}
+
+.text-container-spacing-section {
+    position: absolute;
+    height: 67px;
+    width: 147px;
+    text-align: left;
+    left: 6%;
+}
+
+.text-container-spacing-section h6 {
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: "Hevetica-N3", sans-serif;
+    margin-bottom: 10px;
+}
+
+.text-container-spacing-section P {
+    font-size: 16px;
+    font-family: "Hevetica-N7", sans-serif;
+}
+
+/* brand story description */
+.text-container-description {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.wrapper {
+    position: absolute;
+    left: 6%;
+    text-align: left;
+    margin-bottom: auto;
+}
+
+.wrapper h6 {
+    letter-spacing: -0.24px;
+    font-weight: bold;
+    opacity: 0.8;
+    font-family: "Helvetica-N4";
+    font-size: 15px;
+}
+
+.wrapper #p1 {
+    margin: 20px 0px 0px;
+}
+
+/* product section */
+.product-section {
+    height: 55vh;
+    width: 100%;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
