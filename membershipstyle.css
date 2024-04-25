@@ -7,25 +7,28 @@
 html, body, section {
     height: 100%;
     width: 100%;
+    min-width: 400px;
     align-items: center;
     justify-content: center;
 }
+/* ********************************************************************************************************** */
+/* marking the end of one section vetically */
 
 /* announcement bar */
 div.announcement-bar {
     display: flex;
     background-color: #000000;
     width: 100%;
-    height: 44px;
+    height: 4.4%;
     align-items: center;
     justify-content: space-between;
     font-family: 'Helvetica-N4', sans-serif;
-    padding: 12px 48px;
+    padding: auto;
 }
 
 /* button styling */
 button.left-button, button.right-button, .navbar .left-group-button, .navbar .right-group-button-button {
-    height: 37px;
+    height: 3.7vh;
     width: 28px;
     background-color: black;
     color: white;
@@ -34,34 +37,37 @@ button.left-button, button.right-button, .navbar .left-group-button, .navbar .ri
 .left-arrow, .right-arrow {
     height: 90%;
     width: 90%;
-    font-size: 25px;
+    font-size: 30px;
 }
 
-/* right arrow */
+/* left arrow */
 i.left-arrow {
     text-align: left;
 }
 
-/* left arrow */
+/* right arrow */
 i.right-arrow {
     text-align: right;
 }
 
-/* center text */
+/* center announcement text */
 div.announcement-bar div {
     padding: 11px 10px;
     text-align: center;
 }
 .announcement-bar-text {
-    font-size: 14px;
+    font-size: 80%;
     color: white;
-    font-weight: lighter;
+    /* opacity is used instead of font weight because we cannot have a negative font-weight value */
+    opacity: 0.8;
 }
+
+/* ********************************************************************************************************** */
 
 /* navbar */
 .navbar {
     display: flex;
-    height: 78px;
+    height: 7.8%;
     padding: 16px 20px;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +80,7 @@ div.announcement-bar div {
 }
 
 .anua-logo {
-    width: 140px;
+    width: 14vh;
 }
 
 .right-group-button {
@@ -92,7 +98,7 @@ div.announcement-bar div {
     height: 24px;
     width: 24px;
     font-size: 18px;
-    font-weight: semibold;
+    opacity: 0.7;
 }
 
 .right-group-button-button {
@@ -104,21 +110,26 @@ div.announcement-bar div {
     display: none;
 }
 
+/* ********************************************************************************************************** */
+
 /* hero section */
 .hero-section {
     position: relative;
+    /* lines marking the border top and the border botttom */
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 div.hero-img {
     position: relative;
-    height: 37vh;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .hero-section .hero-img img {
-    top: 0;
-    left: 0;
-    height: 37vh;
+    max-height: 40vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -129,10 +140,14 @@ div.hero-img {
     left: 6%;
     top: 40%;
     text-align: left;
+    /* for responsiveness */
+    max-height: 91px;
+    max-width: 680px;
 }
 
 .text-container p {
     letter-spacing: -0.24px;
+    /* will adjust in media queries to 32px */
     font-size: 24px;
     font-family: 'Helvetica-N7', sans-serif;
 }
@@ -141,7 +156,7 @@ div.hero-img {
 div.spacing-section {
     position: relative;
     width: 100%;
-    height: 184px;
+    height: 20vh;
     align-items: center;
     justify-content: center;
     padding: 64px 0px;
@@ -149,29 +164,45 @@ div.spacing-section {
 
 .text-container-spacing-section {
     position: absolute;
-    height: 67px;
-    width: 147px;
+    height: 40%;
+    width: 86%;
     text-align: left;
     left: 6%;
 }
 
-.text-container-spacing-section h6 {
-    font-size: 13px;
-    font-weight: lighter;
+/* ******************************************************************************************************** */
+/* marking my progress */
+
+.text-container-spacing-section #brand-story {
+    font-size: 90%;
+    opacity: 0.6;
     font-family: "Hevetica-N3", sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.text-container-spacing-section P {
-    font-size: 16px;
+.text-container-spacing-section p {
+    font-size: 2.3vh;
     font-family: "Hevetica-N7", sans-serif;
+}
+
+/* spacing */
+div#spacing {
+    position: absolute;
+    width: 100%;
+    top: 85%;
+}
+div#spacing p {
+    /* appear in a bigger screen */
+    display: none;
+    border-bottom: 1px solid #ccc;
 }
 
 /* brand story description */
 .text-container-description {
     position: relative;
     width: 100%;
-    height: 230px;
+    height: 25%;
+    max-height: 255px;
 }
 
 .wrapper {
@@ -179,29 +210,105 @@ div.spacing-section {
     left: 6%;
     text-align: left;
     margin-bottom: 10px;
+    width: 90%;
+    height: 69%;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper h6 {
+.wrapper .wrapper-paragraph {
+    min-width: 372px;
+    max-width: 680px;
+    min-height: 174px;
+    max-height: 95px;
+}
+
+.wrapper-paragraph #first-p, #second-p {
     letter-spacing: -0.24px;
-    font-weight: bold;
-    opacity: 0.8;
+    opacity: 0.7;
     font-family: "Helvetica-N4";
-    font-size: 15px;
+    font-size: 14px;
 }
 
-.wrapper #p1 {
+.wrapper-paragraph #second-p {
     margin: 20px 0px 0px;
 }
 
-/* product section */
-.product-section {
-    height: 55vh;
+/* below the product section */
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 515px 303px 515px 242px;
+    width: 100%;
+    height: auto;
+}
+
+/* grid section */
+.grid-1, .grid-3 {
+    width: 100%;
+    height: auto;
+}
+
+.grid-1 img, .grid-3 img {
+    width: 100%;
+    max-height: 515px;
+    object-fit:cover;
+    background-size: cover;
+    background-position: center;
+}
+
+/* text */
+.grid-2, .grid-4, .below-grid-text {
+    width: 100%;
+    margin: 24px 0px;
+    padding: 0px 20px;
+}
+
+.grid-4 {
+    height: 241px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrapper-paragraph1 {
     width: 100%;
 }
 
-.product-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-position: center;
+p#heading-p {
+    height: 71px;
+    font-family: "Helvetica-N7";
+    font-size: 24px;
+}
+
+#text-wrapper {
+    margin: 16px 0px 0px 0px;
+    font-family: "Helvetica-N4";
+    opacity: 0.7;
+    font-size: 14px;
+    align-items: center;
+}
+
+#description-2 {
+    margin: 16px 0px 0px 0px;
+    align-items: center;
+    justify-self: center;
+}
+
+/* ************************************************************************************* */
+/* marking the end of grid section */
+
+.below-grid-text {
+    position: relative;
+    top: 2%;
+    left: 6%;
+    padding: 40px 0px;
+    height: 198px;
+    margin: 0;
+}
+
+.below-grid-text .wrapper-paragraph1 {
+    width: 90%;
+}
+
+.below-grid-text .wrapper-paragraph1 #heading-p {
+    height: 31px;
 }

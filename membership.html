@@ -59,76 +59,205 @@
             </div>
             <!-- text over hero -->
             <div class="text-container">
-                <p><strong>
-                NATURAL & ACTIVE
-                INGREDIENTS. GENTLE YET
-                EFFECTIVE.
-                </strong></p>
+                <p>
+                    <strong>
+                        NATURAL & ACTIVE
+                        INGREDIENTS. GENTLE YET
+                        EFFECTIVE.
+                    </strong>
+                </p>
             </div>
         </div>
     <!-- section spacing - brand story: about anua -->
         <div class="spacing-section">
             <div class="text-container-spacing-section">
-                <p><h6>BRAND STORY</h6></p>
-                <p><strong>ABOUT ANUA</strong></p>
-                <hr>
+                <p id="brand-story">
+                    BRAND STORY
+                </p>
+                <p>
+                    <strong>
+                        ABOUT ANUA
+                    </strong>
+                </p>
+            </div>
+            <!-- nothing important; its added for better div container spacing -->
+            <div id="spacing">
+                <p></p>
             </div>
         </div>
-    <!-- about anua description -->
+        <!-- about anua description -->
         <div class="text-container-description">
             <div class="wrapper">
-                <div>
-                    <p>
-                        <h6>
+                <div class="wrapper-paragraph">
+                    <div id="first-p">
+                        <p>
                             We are a skincare brand that strives to make the
                             most effective products with natural and active
                             ingredients.
-                        </h6>
-                    </p>
-                </div>
-                <div id="p1">
-                    <p>
-                        <h6>
+                        </p>
+                    </div>
+                    <div id="second-p">
+                        <p>
                             Our mission is to eliminate skin concerns with gentle
                             yet effective formulations. We actively listen to our
                             customers' voices and plan our products to target
                             those skin concerns with the simplest yet most
                             effective formulations
-                        </h6>
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- product ads section -->
-        <div class="product-section">
-            <div class="product-img">
+        <!-- adjust for media later -->
+        <div class="grid-section">
+            <!-- grid1: product picture -->
+            <div class="grid-1 product-img">
                 <img src="./assets/photo/anua-product.webp" alt="product">
             </div>
-        </div>
-        <div class="spacing-section">
-            <div class="text-container-spacing-section">
-                <p>
-                    <strong>
-                        GIVES INSTANT EFFECT &
-                    SATISFACTION
-                    </strong>
-                </p>
-                <p>
-                    <h6>
-                        Avoiding the use of ingredients that can irritate or
-                        aggravate the skin is of utmost concern to us, and we
-                        insist on using mild ingredients that can work
-                        comfortably with any skin type.
-                        We are constantly innovating our formulations to
-                        achieve an optimal ratio of natural and active
-                        ingredients that will bring about the most effective
-                        results. We believe this approach has delivered
-                        immediate results and great satisfaction to our
-                        beloved customers.
-                    </h6>
-                </p>
+            <!-- grid2: text (description) -->
+            <div class="grid-2 wrapper1">
+                <div class="wrapper-paragraph1">
+                    <p id="heading-p">
+                        <strong>
+                            GIVES INSTANT EFFECT &
+                            SATISFACTION
+                        </strong>
+                    </p>
+                    <div id="text-wrapper">
+                        <p id="description-1">
+                            Avoiding the use of ingredients that can irritate or
+                            aggravate the skin is of utmost concern to us, and we
+                            insist on using mild ingredients that can work
+                            comfortably with any skin type.
+                        </p>
+                        <p id="description-2">
+                            We are constantly innovating our formulations to
+                            achieve an optimal ratio of natural and active
+                            ingredients that will bring about the most effective
+                            results. We believe this approach has delivered
+                            immediate results and great satisfaction to our
+                            beloved customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- grid3: another product picture -->
+            <div class="grid-3 product-img">
+                <img src="./assets/photo/anua-peach-thingy-product.webp" alt="product">
+            </div>
+            <!-- grid4: another descriptive ads -->
+            <div class="grid-4 wrapper1">
+                <div class="wrapper-paragraph1">
+                    <p id="heading-p">
+                        <strong>
+                            CAREFULLY SELECTED INGREDIENTS
+                        </strong>
+                    </p>
+                    <div id="text-wrapper">
+                        <p id="description-1">
+                            Currently, we have more than 30 products carefully formulated with ingredients such as heartleaf, peach, green,
+                            lemon, and birch. We are continually enhancing our existing products to achieve even better results. Our future
+                            plans include the ongoing development of products featuring carefully selected ingredients to address a wide range
+                            of skin concerns.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- section after grid -->
+        <div class="below-grid-text wrapper1">
+            <div class="wrapper-paragraph1">
+                <p id="heading-p">
+                    <strong>
+                        OUR PROFICIENCIES
+                    </strong>
+                </p>
+                <div id="text-wrapper">
+                    <p id="description-1">
+                        Our diverse line of skincare products respond directly to the skincare - the reason behind our products winning the love
+                        of so many users.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- carousel slider -->
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <!-- slide 1 environment (technology) -->
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <div class="earth-img">
+                                    <i class="ri-earth-line"></i>
+                                </div>
+                                <div class="carousel-body">
+                                    <p class="wrapped-strong">
+                                        <strong>
+                                            TECHNOLOGY
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        We are dedicated to pioneering technologies for sustainable
+                                        development across environmental, human, and animal realms.
+                                    </p>
+                                    <p>
+                                        We promise to continue to discover the most eco-friendly
+                                        methods and innovative technologies for you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 2 study -->
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <div class="study-img">
+                                    <i class="ri-user-line"></i>
+                                </div>
+                                <div class="carousel-body">
+                                    <p class="wrapped-strong">
+                                        <strong>
+                                            STUDY
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        We regularly conduct customer interviews to gain direct insight
+                                        into customers' needs and concerns before formulation our products.
+                                    </p>
+                                    <p>
+                                        This rigorous method of research has birthed our current line of 30 products.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide3 sustainability -->
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <div class="sustainability">
+                                    <i class="ri-leaf-fill"></i>
+                                </div>
+                                <div class="carousel-body">
+                                    <p class="wrapped-strong">
+                                        <strong>
+                                            STUDY
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        As a brand that exists to prevent and address skin concerns, we also believes in the
+                                        importance of preserving and caring for the universe we live in.
+                                    </p>
+                                    <p>
+                                        Quality natural ingredients can only come from a clean and healthy environment, and we
+                                        therefore have a responsibility to protect our environment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
     </section>
 
 
