@@ -21,7 +21,7 @@ div.announcement-bar {
     width: 100%;
     height: 4.4%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: 'Helvetica-N4', sans-serif;
     padding: auto;
 }
@@ -33,11 +33,13 @@ button.left-button, button.right-button, .navbar .left-group-button, .navbar .ri
     background-color: black;
     color: white;
     border-style: none;
+    cursor: pointer;
 }
 .left-arrow, .right-arrow {
     height: 90%;
     width: 90%;
     font-size: 30px;
+    opacity: 0.9;
 }
 
 /* left arrow */
@@ -77,15 +79,18 @@ div.announcement-bar div {
 .navbar .left-group-button, .navbar .right-group-button-button {
     color: black;
     background-color: white;
+    cursor: pointer;
 }
 
 .anua-logo {
     width: 14vh;
+    margin-left: 30px;
 }
 
 .right-group-button {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .right-group-button-button a {
@@ -105,9 +110,10 @@ div.announcement-bar div {
     border-style: none;
 }
 
-/* no bag logo for mobile version */
-.bag-logo-button {
-    display: none;
+@media (max-width: 700px) {
+    .bag-logo-button {
+        display: none;
+    }
 }
 
 /* ********************************************************************************************************** */
@@ -128,8 +134,11 @@ div.hero-img {
     overflow: hidden;
 }
 
+img.hero-img-large {
+    display: none;
+}
+
 .hero-section .hero-img img {
-    max-height: 40vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -140,16 +149,17 @@ div.hero-img {
     left: 6%;
     top: 40%;
     text-align: left;
-    /* for responsiveness */
-    max-height: 91px;
+    height: 91px;
     max-width: 680px;
 }
 
 .text-container p {
     letter-spacing: -0.24px;
     /* will adjust in media queries to 32px */
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Helvetica-N7', sans-serif;
+    height: 99%;
+    width: 80%;
 }
 
 /* spacing section: about brand */
@@ -159,30 +169,29 @@ div.spacing-section {
     height: 20vh;
     align-items: center;
     justify-content: center;
-    padding: 64px 0px;
+    padding: 40px 0px;
 }
 
 .text-container-spacing-section {
     position: absolute;
-    height: 40%;
-    width: 86%;
+    height: 68px;
+    width: 148px;
     text-align: left;
     left: 6%;
 }
-
-/* ******************************************************************************************************** */
-/* marking my progress */
 
 .text-container-spacing-section #brand-story {
     font-size: 90%;
     opacity: 0.6;
     font-family: "Hevetica-N3", sans-serif;
     margin-bottom: 30px;
+    font-size: 13.2px;
 }
 
 .text-container-spacing-section p {
-    font-size: 2.3vh;
+    font-size: 20.3px;
     font-family: "Hevetica-N7", sans-serif;
+    width: 100%;
 }
 
 /* spacing */
@@ -191,10 +200,13 @@ div#spacing {
     width: 100%;
     top: 85%;
 }
-div#spacing p {
-    /* appear in a bigger screen */
-    display: none;
-    border-bottom: 1px solid #ccc;
+
+@media (max-width: 700px) {
+    div#spacing p {
+        /* appear in a bigger screen */
+        display: none;
+        border-bottom: 1px solid #ccc;
+    }
 }
 
 /* brand story description */
@@ -203,6 +215,7 @@ div#spacing p {
     width: 100%;
     height: 25%;
     max-height: 255px;
+    padding: 0px 0px 40px;
 }
 
 .wrapper {
@@ -321,18 +334,134 @@ p#heading-p {
     height: 243px;
     align-items: center;
     justify-content: center;
+    padding: 0px 0px 30px;
 }
 
 .carousel-container {
+    width: 90%;
     height: 100%;
-    padding: 0px 0px 40px;
+    padding: 0px 20px;
 }
 
 .earth-img {
-    height: 220px;
     text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 700px) {
+    .card-2, .card-3 {
+        display: none;
+    }
+}
+
+.earth-img i {
+    font-size: 24px;
+    opacity: 0.6;
 }
 
 .carousel-body {
     text-align: center;
+    padding: 0px 0px 40px;
+}
+
+p.wrapped-strong {
+    font-family: "Helvetica-N7", sans-serif;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+p.p2 {
+    margin: 16px 0px 0px;
+}
+
+p.p1, p.p2 {
+    font-family: "Helvetica-N4", sans-serif;
+    font-size: 14px;
+    opacity: 0.6;
+    text-align: center;
+    justify-content: center;
+}
+
+/* navigation dots */
+.navigation-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dot {
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.4;
+}
+
+.active {
+    opacity: 1;
+}
+
+.navigation-dot .dot {
+    width: 6px;
+    height: 6px;
+}
+
+/* sign-up-section */
+.sign-up-section {
+    display: flex;
+    width: 100%;
+    height: 115px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapped-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 31px;
+    font-size: 24.47px;
+    font-family: "Helvetica-N7", sans-serif;
+}
+
+.space {
+    margin-right: 5px;
+}
+
+.sign-up {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* another section below it */
+.universe-section {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    justify-items: center;
+}
+
+.constained-img, .text-below-logo {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-below-logo {
+    padding: 16px 0px 0px;
+    font-family: "Helvetica-N7", sans-serif;
+    font-size: 20px;
+}
+
+.constained-img img {
+    width: 100px;
+    height: 100px;
 }

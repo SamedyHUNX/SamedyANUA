@@ -10,6 +10,8 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <!-- font css -->
     <link href="./assets/fonts/fonts.css" rel="stylesheet">
+    <!-- media for responsiveness (css) -->
+    <link href="./media-queries.css" rel="stylesheet">
     <!-- title -->
     <title>Membership Reward</title>
 </head>
@@ -41,7 +43,7 @@
                 <button class="right-group-button-button">
                     <!-- # are place holders for linking to a page -->
                     <a href="#"><i class="right-group-logo user-logo ri-user-3-line"></i></a>
-                <button>
+                </button>
                 <button class="right-group-button-button">
                     <a href="#"><i class="right-group-logo search-logo ri-search-line"></i></a>
                 </button>
@@ -55,7 +57,8 @@
         <!-- hero section -->
         <div class="hero-section">
             <div class="hero-img">
-                <img src="./assets/hero/anua-hero.webp" alt="product hero">
+                <img class="fade-in hero-img-small" src="./assets/hero/anua-hero.webp" alt="product hero">
+                <img class="fade-in hero-img-large" src="./assets/hero/anua-hero-500.webp">
             </div>
             <!-- text over hero -->
             <div class="text-container">
@@ -182,107 +185,100 @@
             </div>
         </div>
         <!-- carousel slider -->
-        <!-- <div class="carousel-container">
-            <div class="carousel-slide">
-                <div class="card-container">
-                    <div class="slide slide_1">
-                        <div class="slide-content">
-                            <div class="earth-img">
-                                <i class="ri-earth-line"></i>
-                            </div>
-                            <div class="carousel-body">
-                                <p class="wrapped-strong">
-                                    <strong>
-                                        TECHNOLOGY
-                                    </strong>
-                                </p>
-                                <p>
-                                    We are dedicated to pioneering technologies for sustainable
-                                    development across environmental, human, and animal realms.
-                                </p>
-                                <p>
-                                    We promise to continue to discover the most eco-friendly
-                                    methods and innovative technologies for you.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="slide slide_2">
-                        <div class="slide-content">
-                            <div class="study-img">
-                                <i class="ri-user-line"></i>
-                            </div>
-                            <div class="carousel-body">
-                                <p class="wrapped-strong">
-                                    <strong>
-                                        STUDY
-                                    </strong>
-                                </p>
-                                <p>
-                                    We regularly conduct customer interviews to gain direct insight
-                                    into customers' needs and concerns before formulation our products.
-                                </p>
-                                <p>
-                                    This rigorous method of research has birthed our current line of 30 products.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="slide slide_3">
-                        <div class="slide-content">
-                            <div class="sustainability">
-                                <i class="ri-leaf-fill"></i>
-                            </div>
-                            <div class="carousel-body">
-                                <p class="wrapped-strong">
-                                    <strong>
-                                        STUDY
-                                    </strong>
-                                </p>
-                                <p>
-                                    As a brand that exists to prevent and address skin concerns, we also believes in the
-                                    importance of preserving and caring for the universe we live in.
-                                </p>
-                                <p>
-                                    Quality natural ingredients can only come from a clean and healthy environment, and we
-                                    therefore have a responsibility to protect our environment.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="navigation-dots">
-                <span class="dot active" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </div> -->
         <div class="carousel-section">
             <div class="carousel-container">
-                <div class="earth-img">
-                    <i class="ri-earth-line"></i>
+                <!-- card1 -->
+                <div class="card-1">
+                    <div class="earth-img">
+                        <i class="ri-earth-line"></i>
+                    </div>
+                    <div class="carousel-body">
+                        <p class="wrapped-strong">
+                            <strong>
+                                TECHNOLOGY
+                            </strong>
+                            <p class="p1">
+                                We are dedicated to pioneering technologies for sustainable
+                                development across environmental, human, and animal realms.
+                            </p>
+                            <p class="p2">
+                                We promise to continue to discover the most eco-friendly
+                                methods and innovative technologies for you.
+                            </p>
+                        </p>
+                    </div>
                 </div>
-                <div class="carousel-body">
-                    <p class="wrapped-strong">
-                        <strong>
-                            TECHNOLOGY
-                        </strong>
-                    </p>
-                    <p>
-                        We are dedicated to pioneering technologies for sustainable
-                        development across environmental, human, and animal realms.
-                    </p>
-                    <p>
-                        We promise to continue to discover the most eco-friendly
-                        methods and innovative technologies for you.
-                    </p>
+                <!-- card2 -->
+                <div class="card-2">
+                    <div class="study-img">
+                        <i class="ri-user-line"></i>
+                    </div>
+                    <div class="carousel-body">
+                        <p class="wrapped-strong">
+                            <strong>
+                                STUDY
+                            </strong>
+                            <p class="p1">
+                                We regularly conduct customer interviews to gain direct insight
+                                into customers' needs and concerns before formulation our products.
+                            </p>
+                            <p class="p2">
+                                This rigorous method of research has birthed our current line of 30 products.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class="card-3">
+                    <div class="sustainability-img">
+                        <i class="ri-leaf-fill"></i>
+                    </div>
+                    <div class="carousel-body">
+                        <p class="wrapped-strong">
+                            <strong>
+                                SUSTAINABILITY
+                            </strong>
+                            <p class="p1">
+                                As a brand that exists to prevent and address skin concerns, we also believes in the
+                                importance of preserving and caring for the universe we live in.
+                            </p>
+                            <p class="p2">
+                                Quality natural ingredients can only come from a clean and healthy environment, and we
+                                therefore have a responsibility to protect our environment.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="navigation-dot">
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
+        </div>
+        <!-- sign up -->
+        <div class="sign-up-section">
+            <p class="wrapped-sign-up">
+                <strong class="sign-up">
+                    SIGN UP 
+                </strong>
+                <!-- giving a space -->
+                <span class="space"></span>
+                <strong class="here">
+                    HERE!
+                </strong>
+            </p>
+        </div>
+        <!-- may your universe be at ease -->
+        <div class="universe-section">
+            <div class="constained-img">
+                <img src="./assets/logo/anua-logo-big.avif" alt="anua">
+            </div>
+            <p class="text-below-logo">
+                <strong>
+                    MAY YOUR UNIVERSE BE AT EASE
+                </strong>
+            </p>
         </div>
     </section>
 
