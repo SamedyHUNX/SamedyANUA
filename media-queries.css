@@ -22,8 +22,8 @@
 
     /* hero section */
     .hero-section {
-        height: 60vh;
-        max-height: 512px;
+        height: 80vh;
+        /* max-height: 780px; */
     }
     div.hero-img {
         width: 100%;
